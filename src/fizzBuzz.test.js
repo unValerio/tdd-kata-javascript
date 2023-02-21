@@ -45,4 +45,8 @@ describe('fizzBuzz', () => {
     const response = fizzBuzz.getFizzBuzzNumbers(15);
     expect(response).toBe('FizzBuzz');
   });
+  it('should return FizzBuzz if the input is 30', () => {
+    const response = fizzBuzz.getFizzBuzzNumbers(30);
+    expect(response).toBe('FizzBuzz');
+  });
 });
