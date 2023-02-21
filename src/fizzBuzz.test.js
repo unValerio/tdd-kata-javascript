@@ -9,7 +9,7 @@ describe('fizzBuzz', () => {
     const response = fizzBuzz.getFizzBuzzNumbers(2);
     expect(response).toBe(2);
   });
-  it('should return fizz if the input is 3', () => {
+  it('should return Fizz if the input is 3', () => {
     const response = fizzBuzz.getFizzBuzzNumbers(3);
     expect(response).toBe('Fizz');
   });
@@ -20,5 +20,13 @@ describe('fizzBuzz', () => {
   it('should return Buzz if the input is 5', () => {
     const response = fizzBuzz.getFizzBuzzNumbers(5);
     expect(response).toBe('Buzz');
+  });
+  it('should return Fizz if the input is 6', () => {
+    const response = fizzBuzz.getFizzBuzzNumbers(6);
+    expect(response).toBe('Fizz');
+  });
+  it('should return Fizz if the input is 9', () => {
+    const response = fizzBuzz.getFizzBuzzNumbers(9);
+    expect(response).toBe('Fizz');
   });
 });
