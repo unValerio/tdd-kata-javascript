@@ -1,8 +1,8 @@
 import * as fizzBuzz from './fizzBuzz';
 
 describe('fizzBuzz', () => {
-  it('should do something', () => {
-    fizzBuzz.printFizzBuzzNumbers();
-    expect(true).toBeTruthy();
+  it('should return number 1', () => {
+    const response = fizzBuzz.getFizzBuzzNumbers(1);
+    expect(response).toBe(1);
   });
 });

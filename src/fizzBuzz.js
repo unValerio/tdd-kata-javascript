@@ -1,4 +1,1 @@
-export const printFizzBuzzNumbers = () => {
-  console.log('Printing FizzBuzz Numbers...');
-  return 1;
-};
+export const getFizzBuzzNumbers = (input) => 1;
