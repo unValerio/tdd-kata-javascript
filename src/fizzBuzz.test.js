@@ -5,4 +5,8 @@ describe('fizzBuzz', () => {
     const response = fizzBuzz.getFizzBuzzNumbers(1);
     expect(response).toBe(1);
   });
+  it('should return number 2', () => {
+    const response = fizzBuzz.getFizzBuzzNumbers(2);
+    expect(response).toBe(2);
+  });
 });
