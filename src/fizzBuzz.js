@@ -1,9 +1,11 @@
+function isDivisible(number, by) {
+  return number % by === 0;
+}
+
 export const getFizzBuzzNumbers = (input) => {
-  const isDivisibleBy3 = input % 3 === 0;
-  const isDivisibleBy5 = input % 5 === 0;
-  if (isDivisibleBy3 && isDivisibleBy5) return 'FizzBuzz';
-  if (isDivisibleBy5) return 'Buzz';
-  if (isDivisibleBy3) return 'Fizz';
+  if (isDivisible(input, 3) && isDivisible(input, 5)) return 'FizzBuzz';
+  if (isDivisible(input, 5)) return 'Buzz';
+  if (isDivisible(input, 3)) return 'Fizz';
 
   return input;
 };
