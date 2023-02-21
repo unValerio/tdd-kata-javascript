@@ -13,4 +13,8 @@ describe('fizzBuzz', () => {
     const response = fizzBuzz.getFizzBuzzNumbers(3);
     expect(response).toBe('Fizz');
   });
+  it('should return number 4', () => {
+    const response = fizzBuzz.getFizzBuzzNumbers(4);
+    expect(response).toBe(4);
+  });
 });
